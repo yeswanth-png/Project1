@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>home page</title>
+          <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="logo">
+           <div class="hear">Carxstore</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Service.html">Service</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Cantact us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="div-with-bg">
+        <h2>Welocome to carx  We are providing :</h2>
+        <ol>
+            <li>Modren and Functional</li>
+            <li>Unique Shortcodes</li>
+           <li>Fully Responsive</li> 
+        </ol>
+    </div>
+    
+    <script>
+        let isDefault = true;
+    setInterval(() => {
+        document.title = isDefault ? "🚗 Loading..." : "Carxstore";
+        isDefault = !isDefault;
+    }, 1000);
+        document.body.style.display = "none";
+        setTimeout(() => {
+            document.body.style.display = "block";
+        }, 1000); 
+    </script>
+    
+    </body>
+</html>

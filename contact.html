@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <div class="hear">Carxstore</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="e3939f59-22e6-42a3-88f1-38869417deac">
+        <table style="border-spacing: 20px;" align="center">
+            <tr>
+                <td><label>Name:</label></td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label>Phone:</label></td>
+                <td><input type="number" name="phone"></td>
+            </tr>
+            <tr>
+                <td><label>Message:</label></td>
+                <td><textarea name="message" rows="5" cols="30" placeholder="Enter your message here..."></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        let isDefault = true;
+    setInterval(() => {
+        document.title = isDefault ? "🚗 Loading..." : "Carxstore";
+        isDefault = !isDefault;
+    }, 1000);
+        document.body.style.display = "none";
+        setTimeout(() => {
+            document.body.style.display = "block";
+        }, 1000);
+    </script>
+
+</body>
+</html>
